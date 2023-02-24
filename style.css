@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    margin: 30px 60px;
+    text-align: center;
+}
+
+.wrapper {
+    position: relative;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper > img {
+    opacity: 1;
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.wrapper > img.fading {
+    opacity: 0;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 7px;
+    padding: 10px 20px;
+    transition: 0.3s ease-out;
+}
+
+button.prev {
+    margin-right: 150px;
+}
+
+button:hover {
+    box-shadow: 2px 2px black;
+    background-color: azure;
+    cursor: pointer;
+}
